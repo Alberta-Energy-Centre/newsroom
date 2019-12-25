@@ -64,50 +64,17 @@
     <div class="bgimg">
         <div class="middle">
             <img style="max-width:100%;height:auto;border-bottom:15px solid #fff;border-top:1px solid #fff; margin-top: 100px;" src="/logo.png" alt="Alberta War Room" />
-            <h1 style="margin-bottom:0">Coming Soon</h1>
-            <h2 style="margin-top:0;">Early January 2020</h2>
-            <p><a href="https://logo.abwarroom.ca">Click here to checkout the podium logo placer</a></p>
-            <hr>
-            <p style="margin-top:0px;margin-bottom:0px;">
+            <h1>404 Not Found</h1>
+            <!-- <p style="margin-top:0px;margin-bottom:0px;">
                 Follow Us:
                 <a href="https://twitter.com/ABEnergyCentre"><i class="fab fa-twitter"></i></a>
                 <a href="https://github.com/Alberta-Energy-Centre"><i class="fab fa-github"></i></a>
                 <a href="https://albertaenergycentre.ca"><i class="fas fa-globe"></i></a>
             </p>
-            <hr>
-            <p id="countdown" style="font-size:30px"></p>
+            <hr> -->
+            <p id="countdown" style="font-size:30px"><a href="https://abwarroom.ca">Click here to go back to the homepage</a></p>
         </div>
     </div>
-
-    <script>
-        // Set the date we're counting down to
-        var countDownDate = new Date("Jan 12, 2020 00:00:00").getTime();
-
-        // Update the count down every 1 second
-        var countdownfunction = setInterval(function() {
-
-            // Get todays date and time
-            var now = new Date().getTime();
-
-            // Find the distance between now an the count down date
-            var distance = countDownDate - now;
-
-            // Time calculations for days, hours, minutes and seconds
-            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            // Output the result in an element with id="demo"
-            document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
-
-            // If the count down is over, write some text 
-            if (distance < 0) {
-                clearInterval(countdownfunction);
-                document.getElementById("countdown").innerHTML = "Anyday now!";
-            }
-        }, 1000);
-    </script>
 </body>
 
 </html>
